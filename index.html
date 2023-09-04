@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mijn Webpagina</title>
+    <title>Mijn Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .pagina {
+            display: none;
+            padding: 100px;
+            text-align: center;
+        }
+
+        #welkom {
+            background-color: blue;
+            color: white;
+        }
+
+        #brommers {
+            background-color: green;
+            color: white;
+        }
+
+        #homepage {
+            background-color: orange;
+            color: white;
+        }
+
+        #navigatie {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <!-- Welkomstpagina in het blauw -->
-    <div style="background-color: light blue; padding: 20px;">
-        <h1 style="color:blue;">Welkom</h1>
-         
-        <p>Dit is de welkomstpagina van mijn website.</p>
-        <a href="brommers.html">link</a>
+
+    <div id="navigatie">
+        <button onclick="toonPagina('homepage')">Homepage</button>
+        <button onclick="toonPagina('welkom')">Welkom</button>
+        <button onclick="toonPagina('brommers')">brommers</button>
+    </div>
+   <div id="homepage" class="pagina">
+        <h1>Homepage</h1>
+        <p>Dit is de startpagina van mijn website.</p>
     </div>
 
-    <!-- Pagina over brommers in het lichtblauw -->
-    <div style="background-color: white; padding: 20px;">
-        <h1 
-        style="color:blue;">Brommers</h1>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnpCiwmlrwjno86io90D41wXVqytngZicZNiJ3wFzG7bNhKJ81YHRY1BMc4Um73I2CK9s&amp;usqp=CAU" alt="Custom Derbi Senda DRD Racing 50cc - EZrider.nl"/>
-      <p>Op deze pagina vind je informatie over brommers.</p>
-        <img src="brommer.jpg" alt="">
-        <a href="https://nl.wikipedia.org/wiki/Bromfiets">Lees meer over brommers</a>
+    <div id="welkom" class="pagina">
+        <h1>Welkom op mijn website</h1>
+        <p>Dit is de welkomstpagina met een blauwe achtergrond.</p>
     </div>
+
+    <div id="brommers" class="pagina">
+        <h1>brommers</h1>
+        <p>Deze pagina gaat over brommers.</p>
+    </div>
+
+    <script>
+        // Functie om een pagina weer te geven
+        function toonPagina(paginaId) {
+            // Verberg alle pagina's
+            var paginaElementen = document.getElementsByClassName("pagina");
+            for (var i = 0; i < paginaElementen.length; i++) {
+                paginaElementen[i].style.display = "none";
+            }
+
+            // Toon de geselecteerde pagina
+            document.getElementById(paginaId).style.display = "block";
+        }
+
+        // Toon de homepage wanneer de pagina wordt geladen
+        window.onload = function() {
+            toonPagina('homepage');
+        };
+    </script>
 </body>
 </html>
