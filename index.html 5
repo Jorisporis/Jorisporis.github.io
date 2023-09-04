@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mijn Website</title>
+    <title>jorisporiswebsite</title>
     <style>
         body {
             margin: 0;
@@ -16,18 +16,18 @@
         }
 
         #welkom {
-            background-color: blue;
-            color: white;
+            background-color: lightblue;
+            color: black;
         }
 
         #brommers {
-            background-color: green;
-            color: white;
+            background-color: lightgreen;
+            color: black;
         }
 
         #homepage {
             background-color: orange;
-            color: white;
+            color: black;
         }
 
         #navigatie {
@@ -58,12 +58,14 @@
 
     <div id="welkom" class="pagina">
         <h1>Welkom op mijn website</h1>
-        <p>Dit is de welkomstpagina met een blauwe achtergrond.</p>
+        <p>Dit is de welkomstpagina.</p>
     </div>
 
     <div id="brommers" class="pagina">
         <h1>brommers</h1>
         <p>Deze pagina gaat over brommers.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnpCiwmlrwjno86io90D41wXVqytngZicZNiJ3wFzG7bNhKJ81YHRY1BMc4Um73I2CK9s&amp;usqp=CAU" alt="Custom Derbi Senda DRD Racing 50cc - EZrider.nl"/>
+    <p><a href="https://nl.wikipedia.org/wiki/Bromfiets">alles over brommers</a></p>
     </div>
 
     <script>
