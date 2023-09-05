@@ -11,7 +11,7 @@
 
         .pagina {
             display: none;
-            padding: 100px;
+            padding: 150px;
             text-align: center;
         }
 
@@ -30,15 +30,25 @@
             color: black;
         }
 
+        #BinairStelsel {
+            background-color: yellow;
+            color: black;
+         }
+
+        #AlgemeneInformatie {
+            background-color: lightgreen;
+            color: black;
+         }
+        
         #navigatie {
             text-align: center;
             margin-top: 20px;
-        }
+         }
 
         button {
-            padding: 10px 20px;
+            padding: 5px 10px;
             background-color: #333;
-            color: white;
+            color: yellow;
             border: none;
             cursor: pointer;
         }
@@ -50,6 +60,8 @@
         <button onclick="toonPagina('homepage')">Homepage</button>
         <button onclick="toonPagina('welkom')">Welkom</button>
         <button onclick="toonPagina('brommers')">brommers</button>
+        <button onclick="toonPagina('BinairStelsel')">BinairStelsel</button>
+        <button onclick="toonPagina('AlgemeneInformatie')">AlgemeneInformatie</button>
     </div>
    <div id="homepage" class="pagina">
         <h1>Homepage</h1>
@@ -68,6 +80,16 @@
     <p><a href="https://nl.wikipedia.org/wiki/Bromfiets">alles over brommers</a></p>
     </div>
 
+    <div id="BinairStelsel" class="pagina">
+        <h1>BinairStelsel en de uitleg</h1>
+        <p>hier wordt uitgelegd hoe het Binair stelsel werkt.</p>
+    </div>
+    
+      <div id="AlgemeneInformatie" class="pagina">
+        <h1>AlgemeneInformatie over invoer uitvoer</h1>
+        <p>algemene informatie.</p>
+    </div>
+    
     <script>
         // Functie om een pagina weer te geven
         function toonPagina(paginaId) {
