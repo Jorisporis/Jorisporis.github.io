@@ -72,7 +72,9 @@
     </div>
    <div id="homepage" class="pagina">
         <h1>Homepage</h1>
-        <p>Dit is de startpagina van mijn website.</p>
+        <p>Mijn naam is Joris verhagen en ik zit in H4A</p>
+        <p>Ik ben 15 jaar en ik doe de Havo</p>
+        <p>En dit is mijn website/webpagina</p>
     </div>
 
     <div id="welkom" class="pagina">
@@ -89,7 +91,7 @@
 
     <div id="BinairStelsel" class="pagina">
         <h1>BinairStelsel en de uitleg</h1>
-        <p>hier wordt uitgelegd hoe het Binair stelsel werkt.</p>
+        <p>Het Binair stelsel is een stelsel die gebruikt wordt op de computers om letters en cijfers aan te tonen met alleen maar 1tjes en nullen</p>
     </div>
     
       <div id="AlgemeneInformatie" class="pagina">
