@@ -113,19 +113,19 @@
     </div>
     
     <script>
-        // Functie om een pagina weer te geven
+      
         function toonPagina(paginaId) {
-            // Verberg alle pagina's
+         
             var paginaElementen = document.getElementsByClassName("pagina");
             for (var i = 0; i < paginaElementen.length; i++) {
                 paginaElementen[i].style.display = "none";
             }
 
-            // Toon de geselecteerde pagina
+          
             document.getElementById(paginaId).style.display = "block";
         }
 
-        // Toon de homepage wanneer de pagina wordt geladen
+      
         window.onload = function() {
             toonPagina('homepage');
         };
